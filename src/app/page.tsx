@@ -17,6 +17,9 @@ export default function Home() {
       <p className="font-display max-w-xl text-lg font-medium text-foreground/70 sm:text-2xl">
         Od prvního produktu k fungujícímu online byznysu. Už brzy.
       </p>
+      <div className="mt-8 text-xs text-foreground/40">
+        Impact-Site-Verification: ff0b9ff6-96e8-4726-95ec-ad071c22b45b
+      </div>
     </main>
   );
 }
