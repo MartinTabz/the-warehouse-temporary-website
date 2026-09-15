@@ -33,6 +33,10 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="cs" className={`${fredoka.variable} h-full antialiased`}>
+      <head>
+        {/* @ts-expect-error Impact verification requires the non-standard `value` attribute */}
+        <meta name="impact-site-verification" value="ff0b9ff6-96e8-4726-95ec-ad071c22b45b" />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
